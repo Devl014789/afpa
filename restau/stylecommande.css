@@ -1,0 +1,554 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.vitrine {
+    position: relative;
+    text-align: center;
+    background: url(image/pizza.webp);
+    width: 100%;
+    height: 407px;
+    background-size: cover;
+
+
+}
+
+
+.vitrine p {
+
+    color: rgb(232, 232, 232);
+    font-size: 300%;
+    font-weight: 700;
+    text-shadow: black 1px 0 20px;
+
+
+}
+
+
+header {
+    width: 100%;
+    height: 5%;
+    position: relative;
+}
+
+
+.logoh {
+    display: flex;
+    justify-content: center;
+}
+
+
+header img {
+    position: relative;
+    width: 184px;
+    height: 85px;
+}
+
+
+#nav label, #burger {
+    display: none;
+}
+
+
+#items {
+    list-style-type: none;
+    scroll-behavior: smooth;
+    margin-bottom: 30px;
+}
+
+
+#items a {
+    display: block;
+    text-decoration: none;
+    color: #FA4A0C;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#nav label {
+    display: inline-block;
+    color: #FA4A0C;
+    font-size: 1.5em;
+    font-style: normal;
+    padding: 2px;
+    width: 10%;
+}
+
+
+#items {
+    display: none;
+    cursor: pointer;
+}
+
+
+#nav input:checked~#items {
+    display: block;
+}
+
+
+section{
+    width: 100%;
+}
+
+
+.info{
+    width: 100%;
+}
+
+
+.th1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    cursor:default;
+}
+
+
+.inputinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+
+.inputinfo input{
+    width: 99%;
+    border: 0;
+    border-bottom:2px solid grey;
+    color: #000000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: bold;
+    outline: none;
+    cursor: text;
+}
+
+
+::placeholder{
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+
+.trait {
+    margin-top: 30px;
+    border: 1px solid gray;
+    width: 100%;
+    height: 1px;
+    border-radius: 100%;
+}
+
+
+h3{
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    cursor: default;
+}
+
+
+input[type="text"]:focus, .inputcommande input[type="number"]:focus, .inputcommande select:focus {
+    border-bottom: 4px solid #FA4A0C;
+}
+
+
+.inputcommande{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.ingredient{
+    width: 100%;
+}
+
+
+.inputcommande select{
+    width: 100%;
+    border: 0;
+    border-bottom:2px solid grey;
+    color: #000000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 700;
+    outline: none;
+    
+}
+
+
+
+.inputcommande input{
+    width: 99%;
+    border: 0;
+    border-bottom:2px solid grey;
+    color: #000000;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 900;
+    outline: none;
+    cursor: text;
+}
+
+
+.Frites label{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Poppins;
+}
+
+
+.Frites{
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.Frites input{
+    margin:0;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+.inpuboisson input[type="checkbox"]{
+    -webkit-appearance: none;
+    border: 1px solid black;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+}
+
+
+.inpuboisson input[type="checkbox"]:checked{
+    background-color: green;
+}
+
+
+.inpudesserts input[type="checkbox"]{
+    -webkit-appearance: none;
+    border: 1px solid black;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+}
+
+
+.inpudesserts input[type="checkbox"]:checked{
+    background-color: green;
+}
+
+
+.boisson{
+    width: 100%;
+
+}
+
+
+.boisson .checkboisson{
+    width: 20px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.inputboisson{
+    margin-bottom: 30px;
+}
+
+
+.desserts{
+    width: 100%;
+
+}
+
+
+.desserts .checkdesserts{
+    width: 20px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.inputdesserts{
+    margin-bottom: 30px;
+}
+
+
+.livraison{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inputinfoliv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+
+.inputinfoliv input{
+    width: 99%;
+    border: 0;
+    border-bottom:2px solid grey;
+    color: #000000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: bold;
+    outline: none;
+    cursor: text;
+}
+
+
+.btnenvoyer{
+    width: 10em;
+    height: 2em;
+    background-color: #FA4A0C;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 136px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "imageb"
+        "resaux"
+        "textb";
+
+
+}
+
+
+footer img {
+    grid-area: imageb;
+    width: 144px;
+    height: 61px;
+    text-align: center;
+
+}
+
+
+.resaux {
+    grid-area: resaux;
+    width: auto;
+    height: 40px;
+
+
+}
+
+
+.resaux img {
+    width: 40.99px;
+    height: 40.99px;
+    left: 0px;
+    top: 0px;
+
+}
+
+
+footer p {
+    grid-area: textb;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #5C5C5C;
+    text-align: center;
+}
+
+
+@media (min-width:950px) { 
+    
+    
+    .body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "vitrine";
+    }
+
+    
+    header{
+        grid-area: header;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    
+    #nav{
+        width: 70%;
+    }
+
+    
+    #nav label{
+        display: none;
+    }
+
+    
+    #items{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    
+    .vitrine{
+        grid-area: vitrine;
+
+    }
+
+
+    .th1{
+        justify-content: flex-start ;
+        margin-left: 20px;
+    }
+
+
+    .inputinfo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
+    .inputinfo input{
+        width: 40%;
+    }
+
+
+    .Supp{
+        width: 80%;
+    }
+
+
+    .inputcommande{
+        justify-content: space-around;
+    }
+
+
+    .ingredient{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+    .ingredient label{
+        width: 100%;
+    }
+
+    
+    .ingre{
+        width: 40%;
+    }
+
+    
+    .quant{
+        width: 40%;
+    }
+
+    
+    .Frites{
+        width: 70%;
+        flex-direction:row;
+        justify-content: flex-start;
+    }
+
+    
+    .Frites label:nth-child(3){
+        margin-left: 50px;
+    }
+
+    
+    .boisson{
+        width: 40%;
+    }
+
+
+    .desserts{
+        width: 40%;
+    }
+
+    
+    .inputinfoliv{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+    .inputinfoliv input{
+        width: 40%;
+    }
+
+    
+    .btn{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    
+}
