@@ -16,7 +16,7 @@ article {
 
 .conexion {
     height: 350px;
-    width: 20%;
+    width: 350px;
     background-color: #202ca6;
     border-radius: 25px;
     box-shadow: 10px 10px 10px 10px #0c1256;
@@ -43,9 +43,18 @@ h4 {
     flex-direction: column;
 }
 
-#user {
+#email, #pass {
     width: 70%;
     display: flex;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.redplace::-webkit-input-placeholder {
+    color: red;
 }
 
 .bt {
