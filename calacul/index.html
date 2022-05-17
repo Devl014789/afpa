@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="body">
+        <div class="calculatrice">
+            <div class="ecran">
+                <div id="operation">0</div>
+                <div id="resultat"></div>
+            </div>
+            <div class="clavier">
+                <button value="(" onclick="ShowValue(this)" class="btn" id="(">(</button>
+                <button value=")" onclick="ShowValue(this)" class="btn" id=")">)</button>
+                <button value="%" onclick="ShowValue(this)" class="btn" id="%">%</button>
+                <button value="C" onclick="Reset(this)" class="btn" id="C">C</button>
+                <button value="7" onclick="ShowValue(this)" class="btn" id="7">7</button>
+                <button value="8" onclick="ShowValue(this)" class="btn" id="8">8</button>
+                <button value="9" onclick="ShowValue(this)" class="btn" id="9">9</button>
+                <button value="/" onclick="ShowValue(this)" class="btn" id="/">/</button>
+                <button value="4" onclick="ShowValue(this)" class="btn" id="4">4</button>
+                <button value="5" onclick="ShowValue(this)" class="btn" id="5">5</button>
+                <button value="6" onclick="ShowValue(this)" class="btn" id="6">6</button>
+                <button value="*" onclick="ShowValue(this)" class="btn" id="*">*</button>
+                <button value="1" onclick="ShowValue(this)" class="btn" id="1">1</button>
+                <button value="2" onclick="ShowValue(this)" class="btn" id="2">2</button>
+                <button value="3" onclick="ShowValue(this)" class="btn" id="3">3</button>
+                <button value="-" onclick="ShowValue(this)" class="btn" id="-">-</button>
+                <button value="0" onclick="ShowValue(this)" class="btn" id="0">0</button>
+                <button value="." onclick="ShowValue(this)" class="btn" id=".">.</button>
+                <button value="Entrer" onclick="ckMath(this)"  class="btn" id="Entrer">Entrer</button>
+                <button value="+" onclick="ShowValue(this)" class="btn" id="+">+</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" lang="javascript" src="js/script.js"></script>
+</body>
+
+</html>
