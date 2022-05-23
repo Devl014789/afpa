@@ -1,0 +1,63 @@
+.clouds {
+    background-image: url(https://wallpaperaccess.com/full/1462210.jpg);
+}
+
+.rain {
+    background-image: url(https://mcdn.wallpapersafari.com/medium/33/45/pE0vIJ.jpg);
+}
+
+.mist {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/869/108/56/4k-scandinavia-fog-wallpaper-preview.jpg);
+}
+
+.snow {
+    background-image: url(https://images.hdqwalls.com/wallpapers/huts-covered-in-snow-4k-d2.jpg);
+}
+
+.drizzle {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/260/699/743/dark-drizzle-lights-mist-wallpaper-preview.jpg);
+}
+
+.clear {
+    background-image: url(https://wallpaperaccess.com/full/1779054.jpg);
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position:center;
+    background-size: cover;
+    background-color: black;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+i.wi {
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.829);
+}
+h2{
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 12px;
+    transition: opacity .3s, top .5s ; 
+}
