@@ -12,28 +12,44 @@ function capitalize(str) {
     return str[0].toUpperCase() + str.slice(1)
 }
 
+
 async function main(withIp = true) {
     let ville;
     if (withIp) {
+
+
         const ip = await fetch('https://api.ipify.org?format=json')
             .then(resultat => resultat.json())
             .then(json => json.ip)
 
-         ville = await fetch('http://ip-api.com/json/' + ip)
+        ville = await fetch('http://ip-api.com/json/' + ip)
             .then(resultat => resultat.json())
             .then(json => json.city)
+
+
+        const timezone = await fetch('http://ip-api.com/json/' + ip)
+        .then(resultat => resultat.json())
+        .then(json => json.timezone)
+        
+            
+
+        const time = await fetch('https://api.ipgeolocation.io/timezone?apiKey=8c503f09242245d09f6621077676d37a&lang=fr&tz=' + timezone)
+            .then(resultat => resultat.json())
+            .then(json => json.date_time)
+        console.log(time)
+        document.querySelector('#times').textContent = time
+
 
     } else {
         ville = document.querySelector('#ville').textContent;
     }
-    const meteo = await fetch('https://api.openweathermap.org/data/2.5/weather?q='+ville+'&appid=8a7c9e6db246a1b9eeff741747c3751e&lang=fr&units=metric')
+    const meteo = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=8a7c9e6db246a1b9eeff741747c3751e&lang=fr&units=metric')
         .then(resultat => resultat.json())
         .then(json => json)
     console.log(meteo)
     displayWeatherInfos(meteo)
 
 }
-
 
 
 function displayWeatherInfos(data) {
