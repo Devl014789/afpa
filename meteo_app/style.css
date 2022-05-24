@@ -21,7 +21,9 @@
 .clear {
     background-image: url(https://wallpaperaccess.com/full/1779054.jpg);
 }
-
+.haze {
+    background-image: url(https://www.westend61.de/images/0000881371pw/scenic-view-of-field-during-foggy-weather-CAVF24249.jpg);
+}
 body {
     font-family: 'Playfair Display', serif;
     overflow: hidden;
@@ -34,30 +36,19 @@ body {
     background-size: cover;
     background-color: black;
 }
-
 h1 {
     font-size: 3em;
-    color: rgba(255, 255, 255, 0.911);
+    color: rgba(255, 255, 255, 0.980);
+    text-shadow: 0.5px 0.5px 0.5px rgb(104, 97, 97);
 }
 
 i.wi {
     font-size: 4em;
-    color: rgba(255, 255, 255, 0.829);
+    color: rgba(255, 255, 255, 0.980);
+    text-shadow:  0.5px 0.5px 0.5px rgb(90, 88, 88);
 }
-h2{
+h2 {
     font-size: 2em;
-    color: rgba(255, 255, 255, 0.644);
-}
-
-.tooltip {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    color: white;
-    background-color: #222;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 12px;
-    transition: opacity .3s, top .5s ; 
+    color: rgba(255, 255, 255, 0.76);
+    text-shadow:  0.5px 0.5px 0.5px rgb(124, 120, 120);
 }
